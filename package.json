@@ -1,0 +1,26 @@
+{
+    "name": "gui-calculator-kata",
+    "version": "0.0.0-dev",
+    "scripts": {
+        "build": "webpack --bail",
+        "prestart": "npm run build",
+        "start": "http-server ./public -p 3000 -a localhost -c-1",
+        "test": "mocha"
+    },
+    "dependencies": {
+        "react": "0.13.3",
+        "http-server": "0.8.0"
+    },
+    "devDependencies": {
+        "chai": "2.3.0",
+        "chai-string": "1.1.1",
+        "jsdom": "3.1.2",
+        "jsx-loader": "0.13.2",
+        "mocha": "2.2.4",
+        "react-tools": "0.13.3",
+        "sinon": "1.14.1",
+        "sinon-chai": "2.7.0",
+        "webpack": "1.9.5"
+    },
+    "license": "Beerware"
+}
